@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Checkpoint
+  - Ground
+  - Enemy
+  - Collect
+  - Info
+  - Death
   layers:
   - Default
   - TransparentFX
