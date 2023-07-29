@@ -1,31 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
+
+// Code to respawn when lose health point
+
 using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    public Vector3 respawnPoint;
+    private float border = -100;
+    private HeartCount HeartCount;
 
-    public void RespawnNow()
+    void Start()
     {
-        transform.position = respawnPoint;
+        HeartCount = FindObjectOfType<HeartCount>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    // Code for respawning
+    public Vector3 respawnPoint;
+    public void RespawnNow() 
+    {
+        HeartCount.TakeDamage(1);
+        transform.position = respawnPoint; 
+    }
+
+    // Take damage and respawn
+    private void OnCollisionEnter2D(Collision2D collision) 
+    {
+        // Collision with trap
         if (collision.gameObject.tag == "Death")
         {
             RespawnNow();
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        // Collision with enemy
+        if (collision.gameObject.tag == "Enemy")
+        {
+            RespawnNow();
+        }
     }
 
-    // Update is called once per frame
+    // Respawn when fallings
     void Update()
     {
-        
+        if (transform.position.y < border)
+        {
+            RespawnNow();
+        }
     }
 }

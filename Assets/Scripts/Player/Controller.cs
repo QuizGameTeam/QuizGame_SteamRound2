@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(CapsuleCollider2D))]
+// Controller for player (fix later)
+
+using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
@@ -16,6 +13,7 @@ public class Controller : MonoBehaviour
     bool facingRight = true;
     float moveDirection = 0;
     bool isGrounded = false;
+
     Rigidbody2D r2d;
     CapsuleCollider2D mainCollider;
     Transform t;
@@ -25,9 +23,10 @@ public class Controller : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        t = transform;
         r2d = GetComponent<Rigidbody2D>();
         mainCollider = GetComponent<CapsuleCollider2D>();
+
+        t = transform;
         r2d.freezeRotation = true;
         r2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         r2d.gravityScale = gravityScale;
@@ -45,7 +44,7 @@ public class Controller : MonoBehaviour
         }
         else
         {
-            if (isGrounded || r2d.velocity.magnitude < 0.01f)
+            if (isGrounded || r2d.velocity.magnitude < 0.01f || r2d.velocity.magnitude > -0.01f)
             {
                 moveDirection = 0;
                 animator.SetFloat("Speed", moveDirection);
@@ -58,7 +57,7 @@ public class Controller : MonoBehaviour
             if (moveDirection > 0 && !facingRight)
             {
                 facingRight = true;
-                t.localScale = new Vector3(Mathf.Abs(t.localScale.x), t.localScale.y, transform.localScale.z);
+                t.localScale = new Vector3(Mathf.Abs(t.localScale.x), t.localScale.y, t.localScale.z);
             }
             if (moveDirection < 0 && facingRight)
             {
@@ -67,6 +66,25 @@ public class Controller : MonoBehaviour
             }
         }
     }
+
+
+
+    // private void OnCollisionEnter2D(Collision2D collision) 
+    // {
+    //     if (collision.gameObject.tag == "Ground")
+    //     {
+            
+
+    //         isGrounded = true;
+    //         // Jumping
+    //         if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+    //         {
+    //             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
+    //             isGrounded = false;
+    //         }
+    //     }
+    // }
+
 
     void FixedUpdate()
     {
@@ -91,11 +109,11 @@ public class Controller : MonoBehaviour
         }
         Debug.Log(isGrounded);
 
-        // Jumping
+       // Jumping
         if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
         {
-            isGrounded = false;
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
+            isGrounded = false;
         }
         
         animator.SetBool("IsJumping", !isGrounded);

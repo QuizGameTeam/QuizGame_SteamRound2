@@ -11,6 +11,9 @@ TagManager:
   - Collect
   - Info
   - Death
+  - UI
+  - Heart
+  - Coin
   layers:
   - Default
   - TransparentFX
