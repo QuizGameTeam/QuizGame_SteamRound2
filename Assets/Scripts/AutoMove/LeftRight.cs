@@ -1,5 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
+// Auto move for platforms or enemies
+
 using UnityEngine;
 
 public class LeftRight : MonoBehaviour
@@ -19,22 +20,12 @@ public class LeftRight : MonoBehaviour
     private void Update()
     {
         if (movingLeft)
-        {
             if (transform.position.x > leftEdge)
-            {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
-            }
-            else
-                movingLeft = false;
-        }
+            else movingLeft = false;
         else
-        {
-            if (transform.position.x < rightEdge)
-            {
+            if (transform.position.x < rightEdge) 
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
-            }
-            else
-                movingLeft = true;
-        }
+            else movingLeft = true;
     }
 }
