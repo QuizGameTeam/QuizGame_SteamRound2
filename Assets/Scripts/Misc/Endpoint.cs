@@ -2,18 +2,24 @@
 // End game
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Endpoint : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public ScoreCount ScoreCount;
+
     void Start()
     {
-        
+        ScoreCount = FindObjectOfType<ScoreCount>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.gameObject.name == "Player")
+        {
+            PlayerPrefs.SetInt("Score", ScoreCount.Score);
+            SceneManager.LoadScene("WinScene", LoadSceneMode.Single);
+        }
     }
 }

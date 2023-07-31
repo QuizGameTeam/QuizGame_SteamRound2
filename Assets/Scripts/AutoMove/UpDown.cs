@@ -11,7 +11,7 @@ public class UpDown : MonoBehaviour
     private float upEdge;
     private float downEdge;
 
-    private void Awake()
+    private void Start()
     {
         upEdge = transform.position.y + movementDistance;
         downEdge = transform.position.y - movementDistance;

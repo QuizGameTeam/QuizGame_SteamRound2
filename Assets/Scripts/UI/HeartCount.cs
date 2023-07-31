@@ -1,22 +1,26 @@
 
 // Code for showing health and calculate health and die function
 
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeartCount : MonoBehaviour
 {
-    private Text count;
+    private Text HeartNum;
     public float startingHealth = 3;
     private float currentHealth = 3;
     private bool dead = false;
     private GameObject player;
+    public ScoreCount ScoreCount;
 
     void Start()
     {
         player = GameObject.Find("Player");
-        count = GetComponent<Text>();
+        HeartNum = GetComponent<Text>();
         currentHealth = startingHealth;
+        ScoreCount = FindObjectOfType<ScoreCount>();
+        PlayerPrefs.SetInt("Score", ScoreCount.Score);
     }
 
     // Calculate heart
@@ -37,16 +41,17 @@ public class HeartCount : MonoBehaviour
     void Update()
     {
         // Show heart counter
-        count.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
+        HeartNum.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
 
         // Dead or not?
         if ( currentHealth <= 0)
         {
             dead = true;
-            // Dead
+            // Gameover
             if (dead)
             {
-                Destroy(player);
+                PlayerPrefs.SetInt("Score", ScoreCount.Score);
+                SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
             }
         }
     }
