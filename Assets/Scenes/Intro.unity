@@ -214,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &97312048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5296,7 +5296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1956198058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5417,7 +5417,6 @@ MonoBehaviour:
   questionData:
   - {fileID: 11400000, guid: 9d947c382f376f74e84be00ccb2dc4f1, type: 2}
   - {fileID: 11400000, guid: f31a862cabdf8ea4186d1f71e1418f42, type: 2}
-  vt_Live: 2
 --- !u!1 &1998393184
 GameObject:
   m_ObjectHideFlags: 0
