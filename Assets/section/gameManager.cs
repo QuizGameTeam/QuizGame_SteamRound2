@@ -51,8 +51,6 @@ namespace section
         
         private int QuestionIndex;
         private GameState vt_GameState;
-        private int vt_Live = 2;
-        
         void Start()
         {
             SetGameState(GameState.Home);
@@ -74,12 +72,6 @@ namespace section
             }
             else
             {
-                vt_Live--;
-                if (vt_Live == 0) 
-                {
-
-                    SetGameState(GameState.Gameover);
-                }
                 flag = false;
                 Debug.Log("Ngouuuu");
                 Audio.PlayOneShot(WrongAns);
@@ -115,29 +107,37 @@ namespace section
                 case "d":
                     ImgAnsD.color = flag ? Color.green : Color.red;
                     break;
-            }
+            }  
 
-            
-            if (flag)
-            {   
-            
-                if (QuestionIndex == questionData.Length - 1)
-                {
-                    Debug.Log("Xin chuc mung! Ban da chien thang");
-                    SetGameState(GameState.GameWin);
-                    //return;
+            if (flag) Invoke("GameWin" , 4);
+            else Invoke("GameOver" , 4);
+                // if (QuestionIndex == questionData.Length - 1)
+                // {
+                //     Debug.Log("Xin chuc mung! Ban da chien thang");
+                //     SetGameState(GameState.GameWin);
+                //     //return;
                     
-                }
-                else Invoke("ChangeQuiz", 5);
-            }
-
+                // }
+            // Invoke("ChangeQuiz" , 5);
         }
-        private void ChangeQuiz()
+        private void GameWin()
         {
-            QuestionIndex++;
-            InitQuestion(QuestionIndex);
-            flag = false;
+            SetGameState(GameState.GameWin);
         }
+
+        private void GameOver()
+        {
+            SetGameState(GameState.Gameover);
+        }
+
+
+
+        // private void ChangeQuiz()
+        // {
+        //     QuestionIndex++;
+        //     InitQuestion(QuestionIndex);
+        //     flag = false;
+        // }
 
         private void InitQuestion(int vt)
         {
@@ -158,7 +158,6 @@ namespace section
         public void SetGameState(GameState state)
         {
             vt_GameState = state;
-            vt_Live = 2;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
             vt_GamePanel.SetActive(vt_GameState == GameState.Gameplay);
             vt_GamoverPanel.SetActive(vt_GameState == GameState.Gameover);
@@ -170,7 +169,6 @@ namespace section
 
         public void BTnPlay_Pressed()
         {
-            vt_Live = 2;
             SetGameState(GameState.Gameplay);
             InitQuestion(0);
             
@@ -199,7 +197,14 @@ namespace section
         {
             Application.OpenURL("https://miro.com/app/board/uXjVO2QL4po=/");
         }
-
-
+        
+        public void Phishing()
+        {
+            Application.OpenURL("https://funix.edu.vn/chia-se-kien-thuc/8-kieu-tan-cong-lua-dao-phishing-attack-ban-nen-biet/");
+        }
+        public void privacy()
+        {
+            Application.OpenURL("https://www.auditboard.com/blog/privacy-vs-security/");
+        }
     }
 }
