@@ -21,6 +21,7 @@ namespace section
     {
         Home,
         Gameplay,
+        Ques,
         Credit,
         Learn,
         GameWin,
@@ -43,7 +44,7 @@ namespace section
         [SerializeField] private AudioClip CorectAns;
         [SerializeField] private AudioClip WrongAns;
 
-        [SerializeField] private GameObject vt_HomePanel, vt_GamePanel, vt_GamoverPanel, vt_CreditPanel, vt_Learn, vt_Win;
+        [SerializeField] private GameObject vt_HomePanel, vt_GamePanel, vt_GamoverPanel, vt_CreditPanel, vt_Learn, vt_Win, vt_QuesPanel;
 
 
         //[SerializeField] private QuestionData[] questionData;
@@ -109,8 +110,8 @@ namespace section
                     break;
             }  
 
-            if (flag) Invoke("GameWin" , 4);
-            else Invoke("GameOver" , 4);
+            if (flag) Invoke("GameWin_fi" , 4);
+            else Invoke("GameOver_fi" , 4);
                 // if (QuestionIndex == questionData.Length - 1)
                 // {
                 //     Debug.Log("Xin chuc mung! Ban da chien thang");
@@ -120,12 +121,12 @@ namespace section
                 // }
             // Invoke("ChangeQuiz" , 5);
         }
-        private void GameWin()
+        public void GameWin_fi()
         {
             SetGameState(GameState.GameWin);
         }
 
-        private void GameOver()
+        public void GameOver_fi()
         {
             SetGameState(GameState.Gameover);
         }
@@ -160,6 +161,8 @@ namespace section
             vt_GameState = state;
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
             vt_GamePanel.SetActive(vt_GameState == GameState.Gameplay);
+            vt_QuesPanel.SetActive(vt_GameState == GameState.Ques);
+
             vt_GamoverPanel.SetActive(vt_GameState == GameState.Gameover);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_Learn.SetActive(vt_GameState == GameState.Learn);
