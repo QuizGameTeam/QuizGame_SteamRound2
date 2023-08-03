@@ -2,11 +2,13 @@
 // Code to respawn when lose health point
 
 using UnityEngine;
+using section;
 
 public class Respawn : MonoBehaviour
 {
     private float border = -100;
     private HeartCount HeartCount;
+    public gameManager gamemanager;
 
     void Start()
     {
@@ -32,6 +34,11 @@ public class Respawn : MonoBehaviour
         // Collision with enemy
         if (collision.gameObject.tag == "Enemy")
         {
+            
+            gamemanager.Ques_Pressed();
+            //gamemanager.questionText.text = question;
+            //questionText.gameObject.SetActive(true);
+
             RespawnNow();
         }
     }

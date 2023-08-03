@@ -24,6 +24,7 @@ public class HeartCount : MonoBehaviour
         HeartNum = GetComponent<Text>();
         currentHealth = startingHealth;
         ScoreCount = FindObjectOfType<ScoreCount>();
+        gamemanager = FindObjectOfType<gameManager>();
         PlayerPrefs.SetInt("Score", ScoreCount.Score);
         
         //gameManager = GameObject.Find("GameoverPanel");
@@ -58,11 +59,12 @@ public class HeartCount : MonoBehaviour
             if (dead)
             {
                 PlayerPrefs.SetInt("Score", ScoreCount.Score);
-                gamemanager.GameOver_fi();
-                //gamemanager. SetGameState(GameState.Gameover);
-
-                // SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+            
+                //gamemanager.GameOver_fi();
+                
             }
         }
+
+
     }
 }

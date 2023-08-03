@@ -3,6 +3,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace section
 {
@@ -111,7 +112,7 @@ namespace section
             }  
 
             if (flag) Invoke("GameWin_fi" , 4);
-            else Invoke("GameOver_fi" , 4);
+            else Invoke("BTnPlay_Pressed" , 4);
                 // if (QuestionIndex == questionData.Length - 1)
                 // {
                 //     Debug.Log("Xin chuc mung! Ban da chien thang");
@@ -172,13 +173,22 @@ namespace section
 
         public void BTnPlay_Pressed()
         {
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             SetGameState(GameState.Gameplay);
             InitQuestion(0);
             
         }
 
+        public void Ques_Pressed()
+        {
+            SetGameState(GameState.Ques);
+            InitQuestion(0);
+            
+        }
+        
         public void BtnHome_Pressed()
         {
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             QuestionIndex = 0;
             SetGameState(GameState.Home);
         }
