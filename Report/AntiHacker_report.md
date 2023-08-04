@@ -2,35 +2,27 @@
 
 ## Nội dung
 
-- [**1. Introduction:** Giới thiệu khái quát](#1-introduction)
+[**1. Introduction:** Giới thiệu khái quát](#1-introduction)
 
-- [**2. Inspiration:** Cảm hứng tạo ra sản phẩm](#2-inspiration)
+[**2. Inspiration:** Cảm hứng tạo ra sản phẩm](#2-inspiration)
 
-- [**3. What it does:** Chức năng chính của sản phẩm](#3-what-it-does)
+[**3. What it does:** Chức năng chính của sản phẩm](#3-what-it-does)
 
-- [**4. How we build it:** Quá trình tạo nên sản phẩm](#4-how-we-build-it)
+[**4. How we build it:** Quá trình tạo nên sản phẩm](#4-how-we-build-it)
 
-- [**5. Challenges:** Khó khăn trong khi tạo ra sản phẩm](#5-challenges)
+[**5. Challenges:** Khó khăn trong khi tạo ra sản phẩm](#5-challenges)
 
-- [**6. Accomplishments:** Các thành công đã đạt được](#6-accomplishments)
+[**6. Accomplishments:** Các thành công đã đạt được](#6-accomplishments)
 
-- [**7. Lessons learned:** Bài học rút ra trong quá trình làm](#7-lessons-learned)
+[**7. Lessons learned:** Bài học rút ra trong quá trình làm](#7-lessons-learned)
 
-- [**8. Future:** Kế hoạch cải tiến và phát triển sản phẩm](#8-future)
+[**8. Future:** Kế hoạch cải tiến và phát triển sản phẩm](#8-future)
 
-- [**9. Source code**](#9-source-code)
+[**9. Source code**](#9-source-code)
 
 ### 1. Introduction
 
-- Tên nhóm: AntiHacker
-
-    - Hoàng Ngọc Dung
-
-    - Huỳnh Mạnh Tường
-
-    - Đào Phúc Thịnh
-
-    - Nguyễn Phúc Bình
+- Tên nhóm: **AntiHacker** (Hoàng Ngọc Dung, Huỳnh Mạnh Tường, Nguyễn Phúc Bình, Đào Phúc Thịnh)
 
 - Chủ đề nhóm hướng đến **Technology - Enhancing Education for Young Minds** : Tăng cường sự hiệu quả trong học tập và mang lại giáo dục toàn diện cho học sinh.
 
@@ -61,9 +53,9 @@ Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuy�
 
 Thật sự quyết định code Unity mang lại cho nhóm em rất nhiều khó khăn bởi đây là lĩnh vực mới và mọi người trong nhóm chưa từng thử thách qua. 
 
-- Kĩ thuật: Những ngày đầu tiếp cận mọi thứ đều khá mới mẻ. Sau khi bắt đầu chia asset để code thì nhóm em gặp vấn đề merge (kết hợp).
+- **Kĩ thuật**: Những ngày đầu tiếp cận mọi thứ đều khá mới mẻ. Sau khi bắt đầu chia asset để code thì nhóm em gặp vấn đề merge (kết hợp).
 
-- Teamwork: Hầu như không gặp bất cứ vần đề nào vì mọi người đều rất chăm chỉ và quyết tâm.
+- **Teamwork**: Hầu như không gặp bất cứ vần đề nào vì mọi người đều rất chăm chỉ và quyết tâm.
 
 ### 6. Accomplishments
 
@@ -71,9 +63,9 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
 ### 7. Lessons learned
 
-- Teamwork: Tiếp xúc , làm việc với nhau giúp tụi em có thêm kĩ năng phản biện, hỗ trợ góp ý cũng như khả năng làm việc nhóm hiệu quả hơn sau này.
+- **Teamwork**: Tiếp xúc , làm việc với nhau giúp tụi em có thêm kĩ năng phản biện, hỗ trợ góp ý cũng như khả năng làm việc nhóm hiệu quả hơn sau này.
 
-- Unity: Khám phá một lĩnh vực mới giúp chúng em thử thách giới hạn bản thân và rút ra các bài học như:
+- **Unity**: Khám phá một lĩnh vực mới giúp chúng em thử thách giới hạn bản thân và rút ra các bài học như:
 
     - Thống nhất bản unity để không mất package và conflict code.
 
@@ -81,18 +73,18 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
     - Và một số thứ liên quan đến việc code c#.
 
-- Github: Chia branch làm việc hiểu quả hơn, Merge code giữa các branch , xử lý conflict. 
+- **Github**: Chia branch làm việc hiểu quả hơn, Merge code giữa các branch , xử lý conflict. 
 
 ### 8. Future
 
-- Nội dung 
+- **Nội dung**
 
     - Phát triển thêm cốt truyện thông qua từng round 
 
     - Thêm nhiều câu hỏi hơn về các vấn đề liên quan đến an ninh mạng như điều tra số, digital forensic , mics cũng tăng số lượng câu về privacy, phishing, networking.
 
 
-- Kĩ thuật 
+- **Kĩ thuật** 
 
     - Respondsive screen cho nhiều thiết bị, up game lên itch.io, chơi on mà ko cần tải về
 
