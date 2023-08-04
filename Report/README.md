@@ -19,7 +19,7 @@
 ### Cách chơi 
 
 - Chọn Start để bắt đầu game
-    ![Alt text](Report/image.png)
+    ![Alt text](image.png)
 
 - Cách di chuyển
     
@@ -29,18 +29,18 @@
 
     - `A` : qua trái
 
-    ![Alt text](Report/image-1.png)
+    ![Alt text](image-1.png)
 
 - Chạm quái vật 
 
-    ![Alt text](Report/image-3.png)
+    ![Alt text](image-3.png)
 
     
 
 - Trả lời câu hỏi trả lời đúng không bị mật máu. Đồng thời trở về điểm xuất phát
     
 
-    ![Alt text](Report/image-2.png)
+    ![Alt text](image-2.png)
 
 
 
