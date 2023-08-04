@@ -2,23 +2,23 @@
 
 ## Nội dung
 
-- [**1. Introduction:** Giới thiệu khái quát]()
+- [**1. Introduction:** Giới thiệu khái quát](#1-introduction)
 
-- [**2. Inspiration:** Cảm hứng tạo ra sản phẩm]()
+- [**2. Inspiration:** Cảm hứng tạo ra sản phẩm](#2-inspiration)
 
-- [**3. What it does:** Chức năng chính của sản phẩm]()
+- [**3. What it does:** Chức năng chính của sản phẩm](#3-what-it-does)
 
-- [**4. How we build it:** Quá trình tạo nên sản phẩm]()
+- [**4. How we build it:** Quá trình tạo nên sản phẩm](#4-how-we-build-it)
 
-- [**5. Challenges:** Khó khăn trong khi tạo ra sản phẩm]()
+- [**5. Challenges:** Khó khăn trong khi tạo ra sản phẩm](#5-challenges)
 
-- [**6. Accomplishments:** Các thành công đã đạt được]()
+- [**6. Accomplishments:** Các thành công đã đạt được](#6-accomplishments)
 
-- [**7. Lessons learned:** Bài học rút ra trong quá trình làm]()
+- [**7. Lessons learned:** Bài học rút ra trong quá trình làm](#7-lessons-learned)
 
-- [**8. Future:** Kế hoạch cải tiến và phát triển sản phẩm]()
+- [**8. Future:** Kế hoạch cải tiến và phát triển sản phẩm](#8-future)
 
-- [**9. Source code**]()
+- [**9. Source code**](#9-source-code)
 
 ### 1. Introduction
 
@@ -66,9 +66,40 @@ Hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. H
 
 ### 7. Lessons learned
 
+- Teamwork
 
+- Unity
+
+- Github
 
 ### 8. Future
+
+- Nội dung 
+
+    - Phát triển thêm cốt truyện thông qua từng round 
+
+    - Thêm nhiều câu hỏi hơn về các vấn đề liên quan đến an ninh mạng như điều tra số, forensic , mics cũng tăng số lượng câu về privacy, phishing, networking.
+
+
+- Kĩ thuật 
+
+    - cải thiện đồ họa
+    
+    - Respondsive screen cho nhiều thiết bị, up game lên itch.io, chơi on mà ko cần tải về
+
+    - Thêm soundtrack, sound effect cho hiệu ứng như nhảy, chạm đất
+    
+    - Cho phép chọn các nhân vật khác nhau
+    
+    - Cho phép chọn độ khó( dễ thường khó)
+    
+    - Thêm các kẻ địch cùng nhiều cơ chế di chuyển khác
+    
+    - Cải thiện gameplay, fix bug
+    
+    - Không chỉ cho ra sản phẩm trên web mà còn trên android.
+    
+    - Thêm nhiều câu hỏi khác, chọn ngẫu nhiên các câu hỏi
 
 ### 9. Source code
 
