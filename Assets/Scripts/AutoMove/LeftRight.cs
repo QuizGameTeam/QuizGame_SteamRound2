@@ -37,6 +37,7 @@ public class LeftRight : MonoBehaviour
         if ( gameObject.tag == "Enemy")
                 {
                     Turning.flipX = movingLeft;
+                    
                 }
     }
 }

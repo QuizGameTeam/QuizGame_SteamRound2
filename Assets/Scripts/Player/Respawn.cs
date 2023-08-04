@@ -35,6 +35,7 @@ public class Respawn : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             RespawnNow();
+            Debug.Log("TouchEnemy");
             gamemanager.Ques_Pressed();
             //gamemanager.questionText.text = question;
             //questionText.gameObject.SetActive(true);

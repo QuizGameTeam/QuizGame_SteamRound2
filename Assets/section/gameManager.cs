@@ -4,6 +4,7 @@ using TMPro;
 using System;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Random;
 
 namespace section
 {
@@ -41,15 +42,19 @@ namespace section
         [SerializeField] private Image  ImgAnsB;
         [SerializeField] private Image  ImgAnsC;
         [SerializeField] private Image  ImgAnsD;
+
         [SerializeField] private AudioSource Audio;
         [SerializeField] private AudioClip CorectAns;
         [SerializeField] private AudioClip WrongAns;
+        [SerializeField] private AudioClip ThemeAudio;
+        [SerializeField] private AudioClip PlayerAudio;
+
 
         [SerializeField] private GameObject vt_HomePanel, vt_GamePanel, vt_GamoverPanel, vt_CreditPanel, vt_Learn, vt_Win, vt_QuesPanel;
 
 
         //[SerializeField] private QuestionData[] questionData;
-        [SerializeField] private QuestionScriptableData[] questionData;
+        [SerializeField] public QuestionScriptableData[] questionData;
         
         private int QuestionIndex;
         private GameState vt_GameState;
@@ -63,13 +68,17 @@ namespace section
 
         void Start()
         {
+            Audio.clip = ThemeAudio;
+            Audio.Play();
+            
             coins = GameObject.FindGameObjectsWithTag("Coin");
             Debug.Log(coins.Length);
             HeartCount = FindObjectOfType<HeartCount>();
             Collectible = FindObjectOfType<Collectible>();
             ScoreCount = FindObjectOfType<ScoreCount>();
             SetGameState(GameState.Home);
-            //SetGameState(GameState.Credit);
+            
+
             QuestionIndex = 0;
             InitQuestion(0);
             
@@ -103,6 +112,7 @@ namespace section
             vt_Learn.SetActive(vt_GameState == GameState.Learn);
             vt_Win.SetActive(vt_GameState == GameState.GameWin);
             //vt_GameoverPanel.SetActive(vt_GameState == GameState.Gameover);
+
         }
 
         bool flag = false;
@@ -178,7 +188,7 @@ namespace section
                         break;
                 }  
 
-                
+                //QuestionScriptableData.Remove(questionData[QuestionIndex]);
                 // if (!flag) Invoke("GameWin_fi" , 4);
                 // else Invoke("BTnPlay_Pressed" , 4);
                     // if (QuestionIndex == questionData.Length - 1)
@@ -222,6 +232,8 @@ namespace section
             }
             SetGameState(GameState.Gameplay);
             InitQuestion(0);
+            Audio.clip = PlayerAudio;
+            Audio.Play();
             // Collectible.ShowCollectible();
             MyScore = 0;
             
@@ -230,6 +242,8 @@ namespace section
         public void ContinuePlay()
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Audio.clip = PlayerAudio;
+            Audio.Play();
             SetGameState(GameState.Gameplay);
             InitQuestion(0);
         }
@@ -248,6 +262,7 @@ namespace section
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             QuestionIndex = 0;
             SetGameState(GameState.Home);
+            
             MyScore = 0;
         }
         public void BtnCredit_pressed()
