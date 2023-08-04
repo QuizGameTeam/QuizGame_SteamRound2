@@ -136,7 +136,7 @@ namespace section
         void Update()
         {
             if (HeartCount.currentHealth <= 0)
-            {
+            { 
                 GameOver_fi();
                 HeartCount.ResetHealth();
             } 
@@ -282,11 +282,10 @@ namespace section
         
         public void BtnHome_Pressed()
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            QuestionIndex = randomIndex;
-            SetGameState(GameState.Home);
-            
-            MyScore = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // QuestionIndex = randomIndex;
+            // SetGameState(GameState.Home);
+            // MyScore = 0;
         }
         public void BtnCredit_pressed()
         {
