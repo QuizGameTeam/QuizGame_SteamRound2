@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
+  m_Name: QuestionScriptableData 9
+  m_EditorClassIdentifier: 
+  question: "N\u1EBFu b\u1EA1n c\u1EE7a b\u1EA1n y\xEAu c\u1EA7u b\u1EA1n chia s\u1EBB
+    m\u1EADt kh\u1EA9u \u0111\u1EC3 s\u1EED d\u1EE5ng m\xE1y t\xEDnh c\u1EE7a b\u1EA1n
+    cho c\xF4ng vi\u1EC7c, b\u1EA1n n\xEAn l\xE0m g\xEC?"
+  ansA: "L\xE0 b\u1EA1n c\u1EE7a b\u1EA1n, b\u1EA1n s\u1EBD chia s\u1EBB m\u1EADt
+    kh\u1EA9u"
+  ansB: "B\u1EA1n t\u1EEB ch\u1ED1i cung c\u1EA5p "
+  ansC: "B\u1EA1n t\u1EF1 \u0111\u0103ng nh\u1EADp v\xE0 cho ph\xE9p anh ta l\xE0m
+    vi\u1EC7c"
+  ansD: "B\u1EA1n t\u1EA1o th\xF4ng tin \u0111\u0103ng nh\u1EADp c\u1EE7a anh \u1EA5y
+    tr\xEAn m\xE1y t\xEDnh c\u1EE7a b\u1EA1n"
+  correctAns: c

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
+  m_Name: QuestionScriptableData 8
+  m_EditorClassIdentifier: 
+  question: "L\xE0m th\u1EBF n\xE0o \u0111\u1EC3 b\u1EA1n \u0111\u0103ng nh\u1EADp
+    an to\xE0n?"
+  ansA: "M\u1ED9t s\u1EF1 k\u1EBFt h\u1EE3p gi\u1EEFa ch\u1EEF in hoa, s\u1ED1 v\xE0
+    k\xFD hi\u1EC7u/k\xFD t\u1EF1 \u0111\u1EB7c bi\u1EC7t"
+  ansB: "S\u1EED d\u1EE5ng m\u1ED9t c\u1EE5m t\u1EEB nh\u01B0 ' t\xF4i gh\xE9t b\u1EA1n
+    '"
+  ansC: "K\xEDch ho\u1EA1t x\xE1c th\u1EF1c 2 y\u1EBFu t\u1ED1 "
+  ansD: "S\u1EED d\u1EE5ng m\u1EADt kh\u1EA9u l\xE0m m\u1EADt kh\u1EA9u"
+  correctAns: c

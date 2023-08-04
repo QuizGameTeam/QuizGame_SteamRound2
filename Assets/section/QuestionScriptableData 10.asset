@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
+  m_Name: QuestionScriptableData 10
+  m_EditorClassIdentifier: 
+  question: "Con chu\u1ED9t c\u1EE7a m\xE1y t\xEDnh c\u1EE7a b\u1EA1n b\u1EAFt \u0111\u1EA7u
+    nh\u1EA5p v\xE0o nh\u1EEFng th\u1EE9 tr\xEAn m\xE0n h\xECnh v\xE0 di chuy\u1EC3n
+    xung quanh c\u1EE7a ch\xEDnh n\xF3.?"
+  ansA: "R\xFAt ph\xEDch c\u1EAFm chu\u1ED9t"
+  ansB: "T\u1EAFt m\xE1y t\xEDnh"
+  ansC: "Ch\u1EA1y ch\u01B0\u01A1ng tr\xECnh Anti-Virus"
+  ansD: "Ng\u1EAFt k\u1EBFt n\u1ED1i internet ngay l\u1EADp t\u1EE9c "
+  correctAns: d

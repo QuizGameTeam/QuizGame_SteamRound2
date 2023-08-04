@@ -83,8 +83,6 @@ Hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. H
 
 - Kĩ thuật 
 
-    - cải thiện đồ họa
-    
     - Respondsive screen cho nhiều thiết bị, up game lên itch.io, chơi on mà ko cần tải về
 
     - Thêm soundtrack, sound effect cho hiệu ứng như nhảy, chạm đất
@@ -103,7 +101,7 @@ Hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. H
 
 ### 9. Source code
 
-
+[Link github](https://github.com/QuizGameTeam/QuizGame)
 
 
 

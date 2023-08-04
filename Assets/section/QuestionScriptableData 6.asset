@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
+  m_Name: QuestionScriptableData 6
+  m_EditorClassIdentifier: 
+  question: "M\u1EADt kh\u1EA9u n\xE0o an to\xE0n v\xE0 m\u1EA1nh h\u01A1n"
+  ansA: 'abc123 '
+  ansB: "m\u1EADt kh\u1EA9u123"
+  ansC: '@d1n#32! '
+  ansD: "Dddd\u0111296823"
+  correctAns: c

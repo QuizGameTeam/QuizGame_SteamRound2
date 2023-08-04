@@ -152,17 +152,12 @@ namespace section
                 {
                     flag = true;
                     Audio.PlayOneShot(CorectAns);
-                    // Debug.Log("10d gioi gioi");
-                    // Invoke("ContinuePlay" , 4);
                 }
                 else
                 {
-                    // flag = false;
-                    // Debug.Log("Ngouuuu");
                     Audio.PlayOneShot(WrongAns);
                     HeartCount.TakeDamage(1);
                     
-                    // else Invoke("ContinuePlay" , 4);
                 }
                 if (HeartCount.currentHealth > 0)
                 {
@@ -202,19 +197,6 @@ namespace section
                         ImgAnsD.color = flag ? Color.green : Color.red;
                         break;
                 }  
-
-                //QuestionScriptableData.Remove(questionData[QuestionIndex]);
-                // if (!flag) Invoke("GameWin_fi" , 4);
-                // else Invoke("BTnPlay_Pressed" , 4);
-                    // if (QuestionIndex == questionData.Length - 1)
-                    // {
-                    //     Debug.Log("Xin chuc mung! Ban da chien thang");
-                    //     SetGameState(GameState.GameWin);
-                    //     //return;
-                        
-                    // }
-                // Invoke("ChangeQuiz" , 5);
-                
             }
         }
         public void GameWin_fi()

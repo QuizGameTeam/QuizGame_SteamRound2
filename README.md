@@ -36,13 +36,26 @@
 
 Thuyết trình 
 
-- Tên team Tên theme Ý tưởng sản phẩm ( Bình , Thịnh)
 
-- UI Bình 
+- Bình 
+    - Giới thiệu nhóm , Chủ đề nhóm hướng đến , Ý tưởng sản phẩm 
 
-Hướng phát triển sản phẩm Tường
+    - Lý do chọn theme , UI 
 
-Demo bản thử nghiệm đầu tiên của sản phẩm Dung 
+- Thịnh 
+
+    - Lý do chọn Audio 
+
+    - UI , Chức năng chính của sản phẩm
+
+- Tường 
+
+    - Quá trình tạo nên sản phẩm
+
+    - Kế hoạch cải tiến và phát triển sản phẩm
+
+
+- Dung: Demo bản thử nghiệm đầu tiên của sản phẩm.
 
 
 
