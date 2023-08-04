@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
   m_Name: QuestionScriptableData 2
   m_EditorClassIdentifier: 
-  question: Zun Zun quask cuti
-  ansA: siu cute
-  ansB: "cute c\u1EF1c"
-  ansC: hihi
-  ansD: "yef \u1EF3e"
+  question: "T\u1EA7ng n\xE0o sau \u0111\xE2y l\xE0 t\u1EA7ng th\u1EE9 2 c\u1EE7a
+    m\xF4 h\xECnh OSI?"
+  ansA: Datalink
+  ansB: Physical
+  ansC: Internet
+  ansD: 'Presentation '
   correctAns: a

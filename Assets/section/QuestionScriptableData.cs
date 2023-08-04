@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace section
 {
-    [CreateAssetMenu(fileName = "QuestionScriptableData", menuName = "test_game_quizz/QuestionScriptableData", order = 0)]
+    [CreateAssetMenu(fileName = "QuestionScriptableData", menuName = "quizz/QuestionScriptableData", order = 0)]
     public class QuestionScriptableData : ScriptableObject
     {
         public string question;

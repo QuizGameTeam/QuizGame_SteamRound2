@@ -110,7 +110,7 @@ public class Controller : MonoBehaviour
         Debug.Log(isGrounded);
 
        // Jumping
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+        if (Input.GetKey(KeyCode.W) && isGrounded == true)
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
             isGrounded = false;

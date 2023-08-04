@@ -4,23 +4,35 @@
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using section;
 
 public class HeartCount : MonoBehaviour
 {
     private Text HeartNum;
     public float startingHealth = 3;
-    private float currentHealth = 3;
-    private bool dead = false;
-    private GameObject player;
-    public ScoreCount ScoreCount;
+    public float currentHealth = 3;
+    // public bool dead = false;
 
+    private GameObject player;
+    private ScoreCount ScoreCount;
+    private gameManager gamemanager;
+
+    public void ResetHealth()
+    {
+        currentHealth = startingHealth;
+        
+    }
     void Start()
     {
         player = GameObject.Find("Player");
         HeartNum = GetComponent<Text>();
-        currentHealth = startingHealth;
+        ResetHealth();
         ScoreCount = FindObjectOfType<ScoreCount>();
+        gamemanager = FindObjectOfType<gameManager>();
         PlayerPrefs.SetInt("Score", ScoreCount.Score);
+        
+        //gameManager = GameObject.Find("GameoverPanel");
     }
 
     // Calculate heart
@@ -43,16 +55,21 @@ public class HeartCount : MonoBehaviour
         // Show heart counter
         HeartNum.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
 
-        // Dead or not?
-        if ( currentHealth <= 0)
-        {
-            dead = true;
-            // Gameover
-            if (dead)
-            {
-                PlayerPrefs.SetInt("Score", ScoreCount.Score);
-                SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
-            }
-        }
+
+        // // Dead or not?
+        // if ( currentHealth <= 0)
+        // {
+        //     dead = true;
+        //     // Gameover
+        //     if (dead)
+        //     {
+        //         PlayerPrefs.SetInt("Score", ScoreCount.Score);
+            
+        //         //gamemanager.GameOver_fi();
+                
+        //     }
+        // }
+
+
     }
 }

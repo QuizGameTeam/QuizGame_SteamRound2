@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
   m_Name: QuestionScriptableData 1
   m_EditorClassIdentifier: 
-  question: "Zuncuti h\xF4ng"
-  ansA: siu cute
-  ansB: "cute c\u1EF1c"
-  ansC: hihi
-  ansD: 123
-  correctAns: b
+  question: "Trong m\u1EA1ng m\xE1y t\xEDnh DNS- h\u1EC7 th\u1ED1ng ph\xE2n gi\u1EA3i
+    t\xEAn mi\u1EC1n vi\u1EBFt t\u1EAFt c\u1EE7a c\xE1i g\xEC"
+  ansA: Domain Name System
+  ansB: Dynamic Name Server
+  ansC: Domain Network Service
+  ansD: Dynamic Network System
+  correctAns: a

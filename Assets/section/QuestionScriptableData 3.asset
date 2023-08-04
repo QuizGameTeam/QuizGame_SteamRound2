@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
+  m_Name: QuestionScriptableData 3
+  m_EditorClassIdentifier: 
+  question: "C\xE1c \u0111\u1EB7c \u0111i\u1EC3m c\u1EE7a TCP (Transmission Control
+    Protocol - \"Giao th\u1EE9c \u0111i\u1EC1u khi\u1EC3n truy\u1EC1n v\u1EADn\")
+    l\xE0 g\xEC?"
+  ansA: "\u0110\u1ECBnh h\u01B0\u1EDBng k\u1EBFt n\u1ED1i, ki\u1EC3m tra l\u1ED7i,
+    \u0111\xE1ng tin c\u1EADy  "
+  ansB: "Kh\xF4ng k\u1EBFt n\u1ED1i, kh\xF4ng ki\u1EC3m tra l\u1ED7i, kh\xF4ng \u0111\xE1ng
+    tin c\u1EADy "
+  ansC: "\u0110\u1ECBnh h\u01B0\u1EDBng k\u1EBFt n\u1ED1i, ki\u1EC3m tra l\u1ED7i,
+    kh\xF4ng \u0111\xE1ng tin c\u1EADy "
+  ansD: "Kh\xF4ng k\u1EBFt n\u1ED1i, ki\u1EC3m tra l\u1ED7i, \u0111\xE1ng tin c\u1EADy "
+  correctAns: a

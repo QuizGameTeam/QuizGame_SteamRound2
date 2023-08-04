@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e2c881aec32f848a563a253640e999, type: 3}
   m_Name: QuestionScriptableData
   m_EditorClassIdentifier: 
-  question: 1+1 =?
-  ansA: 1
-  ansB: 2
-  ansC: 3
-  ansD: 4
-  correctAns: b
+  question: "T\u1EA7ng giao v\u1EADn (Transport layer) trong m\xF4 h\xECnh OSI giao
+    ti\u1EBFp v\u1EDBi hai t\u1EA7ng n\xE0o sau \u0111\xE2y?"
+  ansA: 'Network, Datalink '
+  ansB: 'Session, Internet '
+  ansC: 'Session, Network '
+  ansD: 'Application, Session '
+  correctAns: c

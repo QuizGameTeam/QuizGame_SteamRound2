@@ -13,12 +13,17 @@ public class Collectible : MonoBehaviour
     {
         HeartCount = FindObjectOfType<HeartCount>();
         ScoreCount = FindObjectOfType<ScoreCount>();
+        // ShowCollectible();
     }
 
     // Make object disapear
-    private void DestroyGameObject()
+    // public void ShowCollectible()
+    // {
+    //     GameObject.FindGameObjectsWithTag("Coin").SetActive(true);
+    // }
+    public void HideCollectible()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     // Apply bonus
@@ -26,7 +31,7 @@ public class Collectible : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
-            DestroyGameObject();
+            
             if ( gameObject.tag == "Heart")
             {
                 HeartCount.AddHealth(1);
@@ -36,6 +41,7 @@ public class Collectible : MonoBehaviour
                 ScoreCount.EarnCoin();
                 Coin = Coin + 1;
             }
+            HideCollectible();
         }
     }
 }
