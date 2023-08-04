@@ -11,18 +11,23 @@ public class HeartCount : MonoBehaviour
 {
     private Text HeartNum;
     public float startingHealth = 3;
-    private float currentHealth = 3;
-    private bool dead = false;
+    public float currentHealth = 3;
+    // public bool dead = false;
+
     private GameObject player;
-    public ScoreCount ScoreCount;
+    private ScoreCount ScoreCount;
+    private gameManager gamemanager;
 
-    public gameManager gamemanager;
-
+    public void ResetHealth()
+    {
+        currentHealth = startingHealth;
+        
+    }
     void Start()
     {
         player = GameObject.Find("Player");
         HeartNum = GetComponent<Text>();
-        currentHealth = startingHealth;
+        ResetHealth();
         ScoreCount = FindObjectOfType<ScoreCount>();
         gamemanager = FindObjectOfType<gameManager>();
         PlayerPrefs.SetInt("Score", ScoreCount.Score);
@@ -51,19 +56,19 @@ public class HeartCount : MonoBehaviour
         HeartNum.text = " X " + currentHealth.ToString() + " / " + startingHealth.ToString();
 
 
-        // Dead or not?
-        if ( currentHealth <= 0)
-        {
-            dead = true;
-            // Gameover
-            if (dead)
-            {
-                PlayerPrefs.SetInt("Score", ScoreCount.Score);
+        // // Dead or not?
+        // if ( currentHealth <= 0)
+        // {
+        //     dead = true;
+        //     // Gameover
+        //     if (dead)
+        //     {
+        //         PlayerPrefs.SetInt("Score", ScoreCount.Score);
             
-                //gamemanager.GameOver_fi();
+        //         //gamemanager.GameOver_fi();
                 
-            }
-        }
+        //     }
+        // }
 
 
     }

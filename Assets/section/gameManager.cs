@@ -53,93 +53,27 @@ namespace section
         
         private int QuestionIndex;
         private GameState vt_GameState;
+
+        private HeartCount HeartCount;
+        private Collectible Collectible;
+        private ScoreCount ScoreCount;
+        public GameObject[] coins;
+
+        public int MyScore;
+
         void Start()
         {
+            coins = GameObject.FindGameObjectsWithTag("Coin");
+            Debug.Log(coins.Length);
+            HeartCount = FindObjectOfType<HeartCount>();
+            Collectible = FindObjectOfType<Collectible>();
+            ScoreCount = FindObjectOfType<ScoreCount>();
             SetGameState(GameState.Home);
             //SetGameState(GameState.Credit);
             QuestionIndex = 0;
-            InitQuestion(0);    
-        }
-
-        bool flag = false;
-
-        public void Ans_pressed(string SelectAns)
-        {
-            string ans = questionData[QuestionIndex].correctAns; 
-            if (ans == SelectAns)
-            {
-                flag = true;
-                Audio.PlayOneShot(CorectAns);
-                Debug.Log("10d gioi gioi");
-            }
-            else
-            {
-                flag = false;
-                Debug.Log("Ngouuuu");
-                Audio.PlayOneShot(WrongAns);
-            }
+            InitQuestion(0);
             
-            switch(ans)
-            {
-                case "a":
-                    ImgAnsA.color = !flag ? Color.green : Color.red;
-                    break;
-                case "b":
-                    ImgAnsB.color = !flag ? Color.green : Color.red;
-                    break;
-                case "c":
-                    ImgAnsC.color = !flag ? Color.green : Color.red;
-                    break;
-                case "d":
-                    ImgAnsD.color = !flag ? Color.green : Color.red;
-                    break;
-            }
-
-            switch(SelectAns)
-            {
-                case "a":
-                    ImgAnsA.color = flag ? Color.green : Color.red;
-                    break;
-                case "b":
-                    ImgAnsB.color = flag ? Color.green : Color.red;
-                    break;
-                case "c":
-                    ImgAnsC.color = flag ? Color.green : Color.red;
-                    break;
-                case "d":
-                    ImgAnsD.color = flag ? Color.green : Color.red;
-                    break;
-            }  
-
-            if (flag) Invoke("GameWin_fi" , 4);
-            else Invoke("BTnPlay_Pressed" , 4);
-                // if (QuestionIndex == questionData.Length - 1)
-                // {
-                //     Debug.Log("Xin chuc mung! Ban da chien thang");
-                //     SetGameState(GameState.GameWin);
-                //     //return;
-                    
-                // }
-            // Invoke("ChangeQuiz" , 5);
         }
-        public void GameWin_fi()
-        {
-            SetGameState(GameState.GameWin);
-        }
-
-        public void GameOver_fi()
-        {
-            SetGameState(GameState.Gameover);
-        }
-
-
-
-        // private void ChangeQuiz()
-        // {
-        //     QuestionIndex++;
-        //     InitQuestion(QuestionIndex);
-        //     flag = false;
-        // }
 
         private void InitQuestion(int vt)
         {
@@ -171,19 +105,142 @@ namespace section
             //vt_GameoverPanel.SetActive(vt_GameState == GameState.Gameover);
         }
 
+        bool flag = false;
+        bool click = false;
+
+        void Update()
+        {
+            if (HeartCount.currentHealth <= 0)
+            {
+                GameOver_fi();
+                HeartCount.ResetHealth();
+            } 
+        }
+        public void Ans_pressed(string SelectAns)
+        {
+            if (!click)
+            {
+                click = true;
+                flag = false;
+                string ans = questionData[QuestionIndex].correctAns; 
+                if (ans == SelectAns)
+                {
+                    flag = true;
+                    Audio.PlayOneShot(CorectAns);
+                    // Debug.Log("10d gioi gioi");
+                    // Invoke("ContinuePlay" , 4);
+                }
+                else
+                {
+                    // flag = false;
+                    // Debug.Log("Ngouuuu");
+                    Audio.PlayOneShot(WrongAns);
+                    HeartCount.TakeDamage(1);
+                    
+                    // else Invoke("ContinuePlay" , 4);
+                }
+                if (HeartCount.currentHealth > 0)
+                {
+                    // ContinuePlay();
+                    Invoke("ContinuePlay" , 4);
+                } 
+                
+                // Show answer
+                switch(ans)
+                {
+                    case "a":
+                        ImgAnsA.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "b":
+                        ImgAnsB.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "c":
+                        ImgAnsC.color = !flag ? Color.green : Color.red;
+                        break;
+                    case "d":
+                        ImgAnsD.color = !flag ? Color.green : Color.red;
+                        break;
+                }
+
+                switch(SelectAns)
+                {
+                    case "a":
+                        ImgAnsA.color = flag ? Color.green : Color.red;
+                        break;
+                    case "b":
+                        ImgAnsB.color = flag ? Color.green : Color.red;
+                        break;
+                    case "c":
+                        ImgAnsC.color = flag ? Color.green : Color.red;
+                        break;
+                    case "d":
+                        ImgAnsD.color = flag ? Color.green : Color.red;
+                        break;
+                }  
+
+                
+                // if (!flag) Invoke("GameWin_fi" , 4);
+                // else Invoke("BTnPlay_Pressed" , 4);
+                    // if (QuestionIndex == questionData.Length - 1)
+                    // {
+                    //     Debug.Log("Xin chuc mung! Ban da chien thang");
+                    //     SetGameState(GameState.GameWin);
+                    //     //return;
+                        
+                    // }
+                // Invoke("ChangeQuiz" , 5);
+                
+            }
+        }
+        public void GameWin_fi()
+        {
+            MyScore = ScoreCount.Score;
+            SetGameState(GameState.GameWin);
+            ScoreCount.Score = 0;
+        }
+
+        public void GameOver_fi()
+        {
+            MyScore = ScoreCount.Score;
+            SetGameState(GameState.Gameover);
+            ScoreCount.Score = 0;
+        }
+
+        // private void ChangeQuiz()
+        // {
+        //     QuestionIndex++;
+        //     InitQuestion(QuestionIndex);
+        //     flag = false;
+        // }
+
         public void BTnPlay_Pressed()
+        {
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            foreach (GameObject coin in coins)
+            {
+                coin.SetActive(true);
+            }
+            SetGameState(GameState.Gameplay);
+            InitQuestion(0);
+            // Collectible.ShowCollectible();
+            MyScore = 0;
+            
+        }
+
+        public void ContinuePlay()
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             SetGameState(GameState.Gameplay);
             InitQuestion(0);
-            
         }
+
 
         public void Ques_Pressed()
         {
             SetGameState(GameState.Ques);
             InitQuestion(0);
-            
+            flag = false;
+            click = false;
         }
         
         public void BtnHome_Pressed()
@@ -191,6 +248,7 @@ namespace section
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             QuestionIndex = 0;
             SetGameState(GameState.Home);
+            MyScore = 0;
         }
         public void BtnCredit_pressed()
         {

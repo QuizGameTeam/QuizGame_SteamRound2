@@ -19,7 +19,6 @@ public class Respawn : MonoBehaviour
     public Vector3 respawnPoint;
     public void RespawnNow() 
     {
-        HeartCount.TakeDamage(1);
         transform.position = respawnPoint; 
     }
 
@@ -30,16 +29,15 @@ public class Respawn : MonoBehaviour
         if (collision.gameObject.tag == "Death")
         {
             RespawnNow();
+            HeartCount.TakeDamage(1);
         }
         // Collision with enemy
         if (collision.gameObject.tag == "Enemy")
         {
-            
+            RespawnNow();
             gamemanager.Ques_Pressed();
             //gamemanager.questionText.text = question;
             //questionText.gameObject.SetActive(true);
-
-            RespawnNow();
         }
     }
 
@@ -49,6 +47,7 @@ public class Respawn : MonoBehaviour
         if (transform.position.y < border)
         {
             RespawnNow();
+            // HeartCount.TakeDamage(1);
         }
     }
 }
