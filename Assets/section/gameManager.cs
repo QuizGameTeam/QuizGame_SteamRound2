@@ -162,7 +162,7 @@ namespace section
                 if (HeartCount.currentHealth > 0)
                 {
                     // ContinuePlay();
-                    Invoke("ContinuePlay" , 4);
+                    Invoke("ContinuePlay" , 3);
                 } 
                 
                 // Show answer
