@@ -37,6 +37,7 @@ public class Respawn : MonoBehaviour
             RespawnNow();
             Debug.Log("TouchEnemy");
             gamemanager.Ques_Pressed();
+            gamemanager.randomques();
             //gamemanager.questionText.text = question;
             //questionText.gameObject.SetActive(true);
         }

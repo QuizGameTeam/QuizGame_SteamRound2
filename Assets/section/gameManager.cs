@@ -66,10 +66,14 @@ namespace section
 
         public int MyScore;
 
+        public int randomIndex;
+            
         void Start()
         {
             Audio.clip = ThemeAudio;
             Audio.Play();
+
+            randomques();
             
             coins = GameObject.FindGameObjectsWithTag("Coin");
             Debug.Log(coins.Length);
@@ -79,11 +83,16 @@ namespace section
             SetGameState(GameState.Home);
             
 
-            QuestionIndex = 0;
-            InitQuestion(0);
+            QuestionIndex = randomIndex;
+            InitQuestion(randomIndex);
             
         }
 
+        public void randomques()
+        {
+            randomIndex = Range(0, questionData.Length);
+
+        }
         private void InitQuestion(int vt)
         {
             if (vt < 0 || vt >= questionData.Length) 
@@ -231,7 +240,7 @@ namespace section
                 coin.SetActive(true);
             }
             SetGameState(GameState.Gameplay);
-            InitQuestion(0);
+            InitQuestion(randomIndex);
             Audio.clip = PlayerAudio;
             Audio.Play();
             // Collectible.ShowCollectible();
@@ -245,14 +254,14 @@ namespace section
             Audio.clip = PlayerAudio;
             Audio.Play();
             SetGameState(GameState.Gameplay);
-            InitQuestion(0);
+            InitQuestion(randomIndex);
         }
 
 
         public void Ques_Pressed()
         {
             SetGameState(GameState.Ques);
-            InitQuestion(0);
+            InitQuestion(randomIndex);
             flag = false;
             click = false;
         }
@@ -260,7 +269,7 @@ namespace section
         public void BtnHome_Pressed()
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            QuestionIndex = 0;
+            QuestionIndex = randomIndex;
             SetGameState(GameState.Home);
             
             MyScore = 0;
