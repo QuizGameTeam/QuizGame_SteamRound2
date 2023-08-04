@@ -19,6 +19,7 @@
 ### Cách chơi 
 
 - Chọn Start để bắt đầu game
+    ![Alt text](image.png)
 
 - Cách di chuyển
     
@@ -28,7 +29,18 @@
 
     - `A` : qua trái
 
-- Chạm quái vật thì phải trả lời câu hỏi trả lời đúng để thu thập vật phẩm
+    ![Alt text](image-1.png)
+
+- Chạm quái vật 
+
+    ![Alt text](image-3.png)
+
+    
+
+- Trả lời câu hỏi trả lời đúng không bị mật máu. Đồng thời trở về điểm xuất phát
+    
+
+    ![Alt text](image-2.png)
 
 
 
