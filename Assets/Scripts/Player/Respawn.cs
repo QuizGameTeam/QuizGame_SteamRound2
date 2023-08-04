@@ -10,13 +10,17 @@ public class Respawn : MonoBehaviour
     private HeartCount HeartCount;
     public gameManager gamemanager;
 
+    // Code for respawning
+    public Vector3 respawnPoint;
+    public Vector3 resetPoint;
+
     void Start()
     {
         HeartCount = FindObjectOfType<HeartCount>();
+        resetPoint = respawnPoint;
     }
 
-    // Code for respawning
-    public Vector3 respawnPoint;
+    
     public void RespawnNow() 
     {
         transform.position = respawnPoint; 

@@ -58,8 +58,9 @@ namespace section
         
         private int QuestionIndex;
         private GameState vt_GameState;
-
         private HeartCount HeartCount;
+        private Respawn Respawn;
+        public GameObject Player;
         private Collectible Collectible;
         private ScoreCount ScoreCount;
         public GameObject[] coins;
@@ -79,7 +80,9 @@ namespace section
             Debug.Log(coins.Length);
             HeartCount = FindObjectOfType<HeartCount>();
             Collectible = FindObjectOfType<Collectible>();
+            Respawn = FindObjectOfType<Respawn>();
             ScoreCount = FindObjectOfType<ScoreCount>();
+            Player = GameObject.FindWithTag("Player");
             SetGameState(GameState.Home);
             
 
@@ -91,6 +94,9 @@ namespace section
         public void randomques()
         {
             randomIndex = Range(0, questionData.Length);
+            QuestionIndex = randomIndex;
+            InitQuestion(randomIndex);
+
 
         }
         private void InitQuestion(int vt)
@@ -245,6 +251,7 @@ namespace section
             Audio.Play();
             // Collectible.ShowCollectible();
             MyScore = 0;
+            Respawn.respawnPoint = Respawn.resetPoint;
             
         }
 
@@ -259,6 +266,13 @@ namespace section
 
 
         public void Ques_Pressed()
+        {
+            Player.transform.SetParent(null);
+            // Player.GetComponent<Respawn>().RespawnNow();
+            Ques_Pressed_2();
+        }
+
+        public void Ques_Pressed_2()
         {
             SetGameState(GameState.Ques);
             InitQuestion(randomIndex);

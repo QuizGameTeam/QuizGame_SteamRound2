@@ -21,9 +21,12 @@ public class Score : MonoBehaviour
     {
         ScoreNum = GetComponent<Text>();
         gamemanager = FindObjectOfType<gameManager>();
+        
+
+    }
+    void Update() {
         ScoreFinal = gamemanager.MyScore;
         // ScoreNum.text = " Score: " + PlayerPrefs.GetInt("Score").ToString();
         ScoreNum.text = " Score: " + ScoreFinal.ToString();
-
     }
 }
