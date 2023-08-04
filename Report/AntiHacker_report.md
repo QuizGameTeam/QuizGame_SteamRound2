@@ -42,7 +42,7 @@ Trong qua trình công nghiệp hóa hiện đại hóa bùng nổ như hiện n
 
 ### 3. What it does:
 
-Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuyển vượt chướng ngại vật. Khi nhân vật chạm vào quái vật thì người chơi phải trả lời câu hỏi liên quan đến round mình đã chọn. Các kiến thức sẽ được cung cấp trước khi vào Game. Kiến thức cung cấp sẽ được mô hình hóa dưới dạng sơ đồ tư duy hoặc mang hướng tiếp cận qua bài Blog.
+Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuyển vượt chướng ngại vật. Khi nhân vật chạm vào quái vật thì người chơi phải trả lời câu hỏi liên quan đến các kiến thức liên quan đến bảo mật thông tin. Các kiến thức sẽ được cung cấp trước khi vào Game. Kiến thức cung cấp sẽ được mô hình hóa dưới dạng sơ đồ tư duy hoặc mang hướng tiếp cận qua bài Blog.
 
 ### 4. How we build it
 
@@ -54,23 +54,34 @@ Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuy�
 
     - Nhóm desgin UI: Thống nhất chủ đề , sound track, effect cho nhóm. Thiết kế tất cả UI cho gameplay.
 
-- **Giai đoạn hoàn thiện**:
+- **Giai đoạn hoàn thiện**: Phân chia thuyết trình , build unity ra game desktop. Hoàn thiện report và kiểm tra game.
 
 ### 5. Challenges
 
-Thật sự quyết định code Unity mang lại cho nhóm em rất nhiều khó khăn bởi đây là lĩnh vực mới và mọi người trong nhóm chưa từng thử thách qua.
+
+Thật sự quyết định code Unity mang lại cho nhóm em rất nhiều khó khăn bởi đây là lĩnh vực mới và mọi người trong nhóm chưa từng thử thách qua. 
+
+- Kĩ thuật: Những ngày đầu tiếp cận mọi thứ đều khá mới mẻ. Sau khi bắt đầu chia asset để code thì nhóm em gặp vấn đề merge (kết hợp).
+
+- Teamwork: Hầu như không gặp bất cứ vần đề nào vì mọi người đều rất chăm chỉ và quyết tâm.
 
 ### 6. Accomplishments
 
-Hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. Hơn hết, mọi người đã có thời gian làm việc cùng nhau. Nhóm em đạt được những giá trị teamwork, tri thức đồng thời cũng là giá trị con người.
+Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. Hơn hết, mọi người đã có thời gian làm việc cùng nhau. Nhóm em đạt được những giá trị không chỉ nằm tri thức mà còn nằm ở giá trị con người.
 
 ### 7. Lessons learned
 
-- Teamwork
+- Teamwork: Tiếp xúc , làm việc với nhau giúp tụi em có thêm kĩ năng phản biện, hỗ trợ góp ý cũng như khả năng làm việc nhóm hiệu quả hơn sau này.
 
-- Unity
+- Unity: Khám phá một lĩnh vực mới giúp chúng em thử thách giới hạn bản thân và rút ra các bài học như:
 
-- Github
+    - Thống nhất bản unity để không mất package và conflict code.
+
+    - Thống nhất việc load scene và state chuyển đổi.
+
+    - Và một số thứ liên quan đến việc code c#.
+
+- Github: Chia branch làm việc hiểu quả hơn, Merge code giữa các branch , xử lý conflict. 
 
 ### 8. Future
 
@@ -78,7 +89,7 @@ Hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. H
 
     - Phát triển thêm cốt truyện thông qua từng round 
 
-    - Thêm nhiều câu hỏi hơn về các vấn đề liên quan đến an ninh mạng như điều tra số, forensic , mics cũng tăng số lượng câu về privacy, phishing, networking.
+    - Thêm nhiều câu hỏi hơn về các vấn đề liên quan đến an ninh mạng như điều tra số, digital forensic , mics cũng tăng số lượng câu về privacy, phishing, networking.
 
 
 - Kĩ thuật 
