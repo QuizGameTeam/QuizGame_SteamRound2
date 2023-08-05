@@ -15,7 +15,7 @@
 
 - Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
 
-- *Lưu ý* tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1YHb0qo0mR4W_RTG5Uosd_BkD5128nd1F) 
+- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1YHb0qo0mR4W_RTG5Uosd_BkD5128nd1F) 
 
     ![Alt text](Report/gamelogo.png)
 
@@ -24,6 +24,11 @@
 
 - Chọn Start để bắt đầu game
     ![Alt text](Report/image.png)
+
+
+- Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn`
+
+    ![Alt text](Report/learn.png)
 
 - Cách di chuyển
     
@@ -37,14 +42,14 @@
 
 - Chạm quái vật 
 
-    ![Alt text](Report/image-3.png)
+    ![Alt text](Report/demo.gif)
 
     
 
-- Trả lời câu hỏi trả lời đúng không bị mật máu. Đồng thời trở về điểm xuất phát
-    
+- Trả lời câu hỏi trả lời đúng không bị mật máu. Đồng thời trở về điểm xuất phát.
 
-    ![Alt text](Report/image-2.png)
+- Người chơi rớt xuống sẽ không mất máu nhưng chạm phải các `trap` thì mất máu.
+
 
 - Tag: `Game Parkour` , `Quiz` , `Networking` , `Phishing`, `Privacy`.
 
