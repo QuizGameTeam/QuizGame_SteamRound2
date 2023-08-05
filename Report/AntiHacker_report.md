@@ -6,7 +6,7 @@
 
 - Chủ đề nhóm hướng đến **Technology - Enhancing Education for Young Minds** : Tăng cường sự hiệu quả trong học tập và mang lại giáo dục toàn diện cho học sinh.
 
-- Tên sản phẩm: AntiHacker
+- Tên sản phẩm: AntiHacker.exe
 
 ### **2. Inspiration:** Cảm hứng tạo ra sản phẩm
 
@@ -53,31 +53,23 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
     - Và một số thứ liên quan đến việc code c#.
 
-- **Github**: Chia branch làm việc hiểu quả hơn, Merge code giữa các branch , xử lý conflict. 
+- **Github**: Chia branch làm việc hiểu quả hơn, merge code giữa các branch , xử lý conflict. 
 
 ### **8. Future:** Kế hoạch cải tiến và phát triển sản phẩm
 
 - **Nội dung**
 
-    - Phát triển thêm cốt truyện thông qua từng round 
+    - Phát triển thêm cốt truyện thông qua từng round. Trong quá trình vượt thử thách sẽ có những kiến thức được cung cấp giúp trả lời câu hỏi trong phần tiếp theo. Đồng thời xây dựng những round game theo chủ đề ví dụ (tìm flag thông qua các chall hoặc mô phỏng các hint như chall osint, forensic ctf để người chơi submit flag)
 
     - Thêm nhiều câu hỏi hơn về các vấn đề liên quan đến an ninh mạng như điều tra số, digital forensic , mics cũng tăng số lượng câu về privacy, phishing, networking.
 
-
 - **Kĩ thuật** 
 
-    - Respondsive screen cho nhiều thiết bị, up game lên itch.io, chơi on mà ko cần tải về
+    - Hiện thị câu hỏi ngẫu nhiên theo quy luật nào đó (như xác suất posion, fibonaci). Nếu người chơi không trả lời sai sẽ mất mạng hoặc quay về checkpoint. Phân loại câu hỏi theo các chủ đề.
 
-    - Thêm soundtrack, sound effect cho hiệu ứng như nhảy, chạm đất
-    
-    - Cho phép chọn các nhân vật khác nhau, cho phép chọn độ khó( dễ thường khó)
-    
-    - Thêm các kẻ địch cùng nhiều cơ chế di chuyển khác
-    
-    - Cải thiện gameplay, fix bug
-    
-    - Không chỉ cho ra sản phẩm trên web mà còn trên android.
+    - Respondsive screen cho nhiều thiết bị (androi), up game lên itch.io.Cải thiện gameplay, fix bug
 
+    - Thêm soundtrack, sound effect cho hiệu ứng như nhảy, chạm đất. Cho phép chọn các nhân vật khác nhau, cho phép chọn độ khó( dễ thường khó. Thêm các kẻ địch cùng nhiều cơ chế di chuyển khác
 ### **9. Source code**
 
 [Link github](https://github.com/QuizGameTeam/QuizGame_SteamRound2/tree/main)
