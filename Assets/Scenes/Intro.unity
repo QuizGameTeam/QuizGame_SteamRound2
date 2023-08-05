@@ -8235,7 +8235,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 0.7607843, b: 1, a: 1}
+  m_BackGroundColor: {r: 0.5283019, g: 0.5003916, b: 0.5229345, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -15431,6 +15431,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 983d606ff536206468326aeb72b89a52, type: 2}
   - {fileID: 11400000, guid: 66f8c1fe399d9004dbc47b62d740f092, type: 2}
   - {fileID: 11400000, guid: f31a862cabdf8ea4186d1f71e1418f42, type: 2}
+  - {fileID: 11400000, guid: 855ac4352f21678448cfbafa7f3246ee, type: 2}
+  - {fileID: 11400000, guid: 29063edeb967ad646a52a554133d8438, type: 2}
+  - {fileID: 11400000, guid: d158e69c8eedc7e40947185d9bfd1284, type: 2}
+  - {fileID: 11400000, guid: f31a862cabdf8ea4186d1f71e1418f42, type: 2}
+  - {fileID: 11400000, guid: 9d947c382f376f74e84be00ccb2dc4f1, type: 2}
+  - {fileID: 11400000, guid: de3b3e8163048e448979a8184d691bec, type: 2}
+  - {fileID: 11400000, guid: 983d606ff536206468326aeb72b89a52, type: 2}
+  - {fileID: 11400000, guid: 66f8c1fe399d9004dbc47b62d740f092, type: 2}
+  - {fileID: 11400000, guid: 30b2a0776811cda46915396179560fde, type: 2}
   Player: {fileID: 0}
   coins: []
   MyScore: 0
