@@ -1,26 +1,6 @@
 # GAME EDUCATION
 
-## Nội dung
-
-[**1. Introduction:** Giới thiệu khái quát](#1-introduction)
-
-[**2. Inspiration:** Cảm hứng tạo ra sản phẩm](#2-inspiration)
-
-[**3. What it does:** Chức năng chính của sản phẩm](#3-what-it-does)
-
-[**4. How we build it:** Quá trình tạo nên sản phẩm](#4-how-we-build-it)
-
-[**5. Challenges:** Khó khăn trong khi tạo ra sản phẩm](#5-challenges)
-
-[**6. Accomplishments:** Các thành công đã đạt được](#6-accomplishments)
-
-[**7. Lessons learned:** Bài học rút ra trong quá trình làm](#7-lessons-learned)
-
-[**8. Future:** Kế hoạch cải tiến và phát triển sản phẩm](#8-future)
-
-[**9. Source code**](#9-source-code)
-
-### 1. Introduction
+### **1. Introduction:** Giới thiệu khái quát
 
 - Tên nhóm: **AntiHacker** (Hoàng Ngọc Dung, Huỳnh Mạnh Tường, Nguyễn Phúc Bình, Đào Phúc Thịnh)
 
@@ -28,15 +8,15 @@
 
 - Tên sản phẩm: AntiHacker
 
-### 2. Inspiration:
+### **2. Inspiration:** Cảm hứng tạo ra sản phẩm
 
 Trong qua trình công nghiệp hóa hiện đại hóa bùng nổ như hiện nay. Song hành với sự **phát triển công nghệ** chính là **vấn đề bảo mật thông tin.** Chính vì vậy, nhóm em quyết định phát triển theo hướng **Enhancing Education for Young Minds** nhằm mong muốn thông qua trò chơi (game 2d platformer) kết hợp với các vấn về như Networking, Phishing, Privacy giúp cho mọi người có cái nhìn toàn diện hơn về các vấn đề liên quan đến bảo mật và nâng cao thêm nhân thức với những vấn đề liên quan.
 
-### 3. What it does:
+### **3. What it does:** Chức năng chính của sản phẩm
 
 Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuyển vượt chướng ngại vật. Khi nhân vật chạm vào quái vật thì người chơi phải trả lời câu hỏi liên quan đến các kiến thức liên quan đến bảo mật thông tin. Các kiến thức sẽ được cung cấp trước khi vào Game. Kiến thức cung cấp sẽ được mô hình hóa dưới dạng sơ đồ tư duy hoặc mang hướng tiếp cận qua bài Blog.
 
-### 4. How we build it
+### **4. How we build it:** Quá trình tạo nên sản phẩm
 
 - **Giai đoạn đầu** : nhóm em lên ý tưởng và bàn bạc về theme cho game, các thao tác cho nhân vật, thứ tự hiện thị câu hỏi và thu thập các kiến thức về an ninh mạng bảo mật thông tin.
 
@@ -48,7 +28,7 @@ Tựa game của nhóm em sẽ gồm một nhân vật có khả năng di chuy�
 
 - **Giai đoạn hoàn thiện**: Phân chia thuyết trình , build unity ra game desktop. Hoàn thiện report và kiểm tra game.
 
-### 5. Challenges
+### **5. Challenges:** Khó khăn trong khi tạo ra sản phẩm
 
 
 Thật sự quyết định code Unity mang lại cho nhóm em rất nhiều khó khăn bởi đây là lĩnh vực mới và mọi người trong nhóm chưa từng thử thách qua. 
@@ -57,11 +37,11 @@ Thật sự quyết định code Unity mang lại cho nhóm em rất nhiều kh�
 
 - **Teamwork**: Hầu như không gặp bất cứ vần đề nào vì mọi người đều rất chăm chỉ và quyết tâm.
 
-### 6. Accomplishments
+### **6. Accomplishments:** Các thành công đã đạt được
 
 Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu trò chơi từ những ý tưởng ban đầu. Hơn hết, mọi người đã có thời gian làm việc cùng nhau. Nhóm em đạt được những giá trị không chỉ nằm tri thức mà còn nằm ở giá trị con người.
 
-### 7. Lessons learned
+### **7. Lessons learned:** Bài học rút ra trong quá trình làm
 
 - **Teamwork**: Tiếp xúc , làm việc với nhau giúp tụi em có thêm kĩ năng phản biện, hỗ trợ góp ý cũng như khả năng làm việc nhóm hiệu quả hơn sau này.
 
@@ -75,7 +55,7 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
 - **Github**: Chia branch làm việc hiểu quả hơn, Merge code giữa các branch , xử lý conflict. 
 
-### 8. Future
+### **8. Future:** Kế hoạch cải tiến và phát triển sản phẩm
 
 - **Nội dung**
 
@@ -90,21 +70,17 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
     - Thêm soundtrack, sound effect cho hiệu ứng như nhảy, chạm đất
     
-    - Cho phép chọn các nhân vật khác nhau
-    
-    - Cho phép chọn độ khó( dễ thường khó)
+    - Cho phép chọn các nhân vật khác nhau, cho phép chọn độ khó( dễ thường khó)
     
     - Thêm các kẻ địch cùng nhiều cơ chế di chuyển khác
     
     - Cải thiện gameplay, fix bug
     
     - Không chỉ cho ra sản phẩm trên web mà còn trên android.
-    
-    - Thêm nhiều câu hỏi khác, chọn ngẫu nhiên các câu hỏi
 
-### 9. Source code
+### **9. Source code**
 
-[Link github](https://github.com/QuizGameTeam/QuizGame)
+[Link github](https://github.com/QuizGameTeam/QuizGame_SteamRound2/tree/Bugfixxed)
 
 
 
