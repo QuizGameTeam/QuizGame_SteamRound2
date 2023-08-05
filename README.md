@@ -46,7 +46,7 @@
 
     
 
-- Trả lời câu hỏi trả lời đúng không bị mật máu. Đồng thời trở về điểm xuất phát.
+- Trả lời câu hỏi trả lời đúng không bị mất máu. Đồng thời trở về điểm xuất phát.
 
 - Người chơi rớt xuống sẽ không mất máu nhưng chạm phải các `trap` thì mất máu.
 
