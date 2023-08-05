@@ -13,9 +13,9 @@
 
 - Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Intro` 
 
-- Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
+- Chơi gameplay : floder `BuildGame` -> `64bit_final_final` -> `AntiHacker.exe` 
 
-- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1CMWyGcGjYdrhms4vOZKX1Ieer59IrrOb) 
+- **Lưu ý** tải hết floder`64bit_final_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1CMWyGcGjYdrhms4vOZKX1Ieer59IrrOb) 
 
     ![Alt text](Report/gamelogo.png)
 
