@@ -15440,6 +15440,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 983d606ff536206468326aeb72b89a52, type: 2}
   - {fileID: 11400000, guid: 66f8c1fe399d9004dbc47b62d740f092, type: 2}
   - {fileID: 11400000, guid: 30b2a0776811cda46915396179560fde, type: 2}
+  quescontent: {fileID: 11400000, guid: fab5b9a585eca9e47ace4a60080b87b1, type: 2}
   Player: {fileID: 0}
   coins: []
   MyScore: 0

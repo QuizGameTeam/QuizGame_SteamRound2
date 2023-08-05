@@ -55,7 +55,8 @@ namespace section
 
         //[SerializeField] private QuestionData[] questionData;
         [SerializeField] public QuestionScriptableData[] questionData;
-        
+        [SerializeField] private QuestionContent quescontent;
+
         private int QuestionIndex;
         private GameState vt_GameState;
         private HeartCount HeartCount;
@@ -89,6 +90,7 @@ namespace section
             QuestionIndex = randomIndex;
             InitQuestion(randomIndex);
             
+            //quescontent.GetQuesQuizz(0).ansA;
         }
 
         public void randomques()
