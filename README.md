@@ -13,9 +13,13 @@
 
 - Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Intro` 
 
-- Chơi gameplay : floder `BuildGame` -> `64bit` -> `QuizProject.exe` 
+- Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
 
-- Mô tả: Người chơi đóng vai nhân vật trên hành trình tìm kiến tri thức cũng như theo đuổi các vấn đề liên quan đến bảo mật. Trên hành trình này người chơi phải trả lời câu hỏi sau mỗi lần chạm quái để nhận được chiến lợi phẩm.
+- *Lưu ý* tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1YHb0qo0mR4W_RTG5Uosd_BkD5128nd1F) 
+
+    ![Alt text](Report/gamelogo.png)
+
+- **Mô tả**: Người chơi đóng vai nhân vật trên hành trình tìm kiến tri thức cũng như theo đuổi các vấn đề liên quan đến bảo mật. Trên hành trình này người chơi phải trả lời câu hỏi sau mỗi lần chạm quái để nhận được chiến lợi phẩm.
 ### Cách chơi 
 
 - Chọn Start để bắt đầu game
@@ -42,5 +46,6 @@
 
     ![Alt text](Report/image-2.png)
 
+- Tag: `Game Parkour` , `Quiz` , `Networking` , `Phishing`, `Privacy`.
 
 

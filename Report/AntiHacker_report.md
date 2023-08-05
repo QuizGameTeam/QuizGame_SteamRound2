@@ -80,7 +80,7 @@ Tuy nhiều thử thách nhưng nhóm em đã hoàn thiện khá chỉnh chu tr�
 
 ### **9. Source code**
 
-[Link github](https://github.com/QuizGameTeam/QuizGame_SteamRound2/tree/Bugfixxed)
+[Link github](https://github.com/QuizGameTeam/QuizGame_SteamRound2/tree/main)
 
 
 
