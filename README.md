@@ -15,7 +15,7 @@
 
 - Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
 
-- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1YHb0qo0mR4W_RTG5Uosd_BkD5128nd1F) 
+- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1CMWyGcGjYdrhms4vOZKX1Ieer59IrrOb) 
 
     ![Alt text](Report/gamelogo.png)
 
@@ -26,9 +26,9 @@
     ![Alt text](Report/image.png)
 
 
-- Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn`
+- Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn` và sau đó có thể `play quiz`
 
-    ![Alt text](Report/learn.png)
+    ![Alt text](Report/learn.gif)
     
 - Cách di chuyển
     
