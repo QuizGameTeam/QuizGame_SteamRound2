@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658ca1e2efb50a94b97ba5639dfc2fa5, type: 3}
+  m_Name: QuesContent 2
+  m_EditorClassIdentifier: 
+  question: "T\u1EA7ng n\xE0o sau \u0111\xE2y l\xE0 t\u1EA7ng th\u1EE9 2 c\u1EE7a
+    m\xF4 h\xECnh OSI? "
+  answerA: 'Physical '
+  answerB: Presentation
+  answerC: Internet
+  answerD: Datalink
+  correctAnswer: d

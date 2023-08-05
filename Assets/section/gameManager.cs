@@ -27,6 +27,9 @@ namespace section
         Credit,
         Learn,
         GameWin,
+        Quiz,
+        OverQuiz,
+        WinQuiz,
         Gameover
     }
 
@@ -50,13 +53,12 @@ namespace section
         [SerializeField] private AudioClip PlayerAudio;
 
 
-        [SerializeField] private GameObject vt_HomePanel, vt_GamePanel, vt_GamoverPanel, vt_CreditPanel, vt_Learn, vt_Win, vt_QuesPanel;
+        [SerializeField] private GameObject vt_HomePanel, vt_GamePanel,vt_GamoverPanel, vt_CreditPanel, vt_Learn, vt_Win, vt_QuesPanel, vt_Quiz, vt_GameOverQuiz,vt_GameWinQuiz;
 
 
         //[SerializeField] private QuestionData[] questionData;
         [SerializeField] public QuestionScriptableData[] questionData;
-        [SerializeField] private QuestionContent quescontent;
-
+        
         private int QuestionIndex;
         private GameState vt_GameState;
         private HeartCount HeartCount;
@@ -123,11 +125,14 @@ namespace section
             vt_HomePanel.SetActive(vt_GameState == GameState.Home);
             vt_GamePanel.SetActive(vt_GameState == GameState.Gameplay);
             vt_QuesPanel.SetActive(vt_GameState == GameState.Ques);
-
+            vt_Quiz.SetActive(vt_GameState == GameState.Quiz);
             vt_GamoverPanel.SetActive(vt_GameState == GameState.Gameover);
             vt_CreditPanel.SetActive(vt_GameState == GameState.Credit);
             vt_Learn.SetActive(vt_GameState == GameState.Learn);
             vt_Win.SetActive(vt_GameState == GameState.GameWin);
+            vt_GameOverQuiz.SetActive(vt_GameState == GameState.OverQuiz);
+            vt_GameWinQuiz.SetActive(vt_GameState == GameState.WinQuiz);
+
             //vt_GameoverPanel.SetActive(vt_GameState == GameState.Gameover);
 
         }
@@ -256,6 +261,7 @@ namespace section
             Ques_Pressed_2();
         }
 
+        
         public void Ques_Pressed_2()
         {
             SetGameState(GameState.Ques);

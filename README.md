@@ -29,7 +29,7 @@
 - Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn`
 
     ![Alt text](Report/learn.png)
-
+    
 - Cách di chuyển
     
     - `D` : qua phải 
