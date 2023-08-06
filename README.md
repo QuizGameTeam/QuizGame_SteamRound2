@@ -11,6 +11,8 @@
 
 - Bản unity : 2021.3.18f1
 
+- Game Desktop chỉ có trên nền tản `Windown`. 
+
 - Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Intro` 
 
 - Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
