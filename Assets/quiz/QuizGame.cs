@@ -47,7 +47,7 @@ namespace quiz
 
         private int m_QuestionIndex;
         private GameState m_GameState;
-        private int m_Live = 3;
+        private int m_Live = 1;
 
         // Start is called before the first frame update
         void Start()
@@ -183,7 +183,7 @@ namespace quiz
 
         public void BtnQues_Pressed()
         {
-            m_Live = 3;
+            m_Live = 1;
             gamemanager.SetGameState(GameState.Quiz);
             InitQuestion(0);
             m_QuestionIndex = 0;

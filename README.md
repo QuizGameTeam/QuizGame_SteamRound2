@@ -13,9 +13,9 @@
 
 - Mở unity xem gameplay trong floder `Asset` -> `Scenes` -> `Intro` 
 
-- Chơi gameplay : floder `BuildGame` -> `64bit_final_final` -> `AntiHacker.exe` 
+- Chơi gameplay : floder `BuildGame` -> `64bit_final` -> `AntiHacker.exe` 
 
-- **Lưu ý** tải hết floder`64bit_final_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1CMWyGcGjYdrhms4vOZKX1Ieer59IrrOb) 
+- **Lưu ý** tải hết floder`64bit_final` hoặc tải [link sau](https://drive.google.com/drive/folders/1rXNZoINJp-quim6oTlUo_gqAIqO_urCp) 
 
     ![Alt text](Report/gamelogo.png)
 
@@ -26,7 +26,7 @@
     ![Alt text](Report/image.png)
 
 
-- Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn` và sau đó có thể `play quiz`
+- Người chơi có thể đọc/ học thêm kiến thức trước khi chơi sau khi bấm vào nút `learn` và sau đó có thể `play quiz`. Quiz sẽ gồm 4 câu trả lời sai 1 câu sẽ thua. *Phần này sẽ được cập nhật thêm trong thời gian sớm nhất*
 
     ![Alt text](Report/learn.gif)
     
