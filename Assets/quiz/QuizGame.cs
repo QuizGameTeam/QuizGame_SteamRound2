@@ -79,11 +79,11 @@ namespace quiz
                 else
                 {
                     m_Live--;
-                    if (m_Live == 0)
-                    {
-                        gamemanager.SetGameState(GameState.OverQuiz);
-                        m_AudioSource.Stop();
-                    }
+                    // if (m_Live == 0)
+                    // {
+                    //     gamemanager.SetGameState(GameState.OverQuiz);
+                    //     m_AudioSource.Stop();
+                    // }
                     m_AudioSource.PlayOneShot(m_SfxWrongAnswer);
                     traLoiDung = false;
                     Debug.Log("Ban da tra loi sai");
@@ -120,23 +120,40 @@ namespace quiz
                         m_ImgAnswerD.color = traLoiDung ? Color.green : Color.red;
                         break;
                 }
-            }
-
-            if (m_QuestionIndex >= m_QuestionData.Length - 1)
-            {
-                if (traLoiDung || m_Live > 0 )
+                // if (m_QuestionIndex >= m_QuestionData.Length - 1)
+                // {
+                //     if (traLoiDung || m_Live > 0 )
+                //     {
+                //         gamemanager.SetGameState(GameState.WinQuiz);
+                //         return;
+                //     }
+                //     // else 
+                //     // {
+                //     //     gamemanager.SetGameState(GameState.OverQuiz);
+                //     //     return;
+                //     // }
+                // } 
+                // else Invoke("NextQuestion", 3f);
+                if (m_Live > 0)
                 {
-                    gamemanager.SetGameState(GameState.WinQuiz);
-                    return;
+                    if (traLoiDung)
+                    {
+                        if (m_QuestionIndex >= m_QuestionData.Length - 1)
+                        {
+                            gamemanager.SetGameState(GameState.WinQuiz);
+                        }
+                        else Invoke("NextQuestion", 3f);
+                    }
+                    else Invoke("NextQuestion", 3f);
                 }
                 else 
                 {
                     gamemanager.SetGameState(GameState.OverQuiz);
-                    return;
+                    m_AudioSource.Stop();
                 }
             }
 
-            Invoke("NextQuestion", 3f);
+            
         }
 
         private void NextQuestion()
@@ -169,7 +186,9 @@ namespace quiz
             m_Live = 3;
             gamemanager.SetGameState(GameState.Quiz);
             InitQuestion(0);
+            m_QuestionIndex = 0;
             m_AudioSource.Stop();
+            click = false;
             // m_AudioSource.clip = m_MusicMainTheme;
             // m_AudioSource.Play();
         }
